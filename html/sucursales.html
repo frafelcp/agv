@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agencia de Viajes - Convenios</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- otros estilos -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/styleboo.css" />
+    <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png"
+        sizes="180x180">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png sizes=" 32x32"
+        type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16"
+        type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
+        color="#7952b3">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">AG</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/paquetes.html">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/convenios.html">Convenios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/gui.html">GUI</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Mas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/html/sucursales.html">sucursales</a></li>
+                                <li><a class="dropdown-item" href="/html/trabajo.html">Trabajo</a></li>
+                                <li><a class="dropdown-item" href="/html/contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <form class="container-fluid justify-content-start">
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalLogin">Iniciar Sesion</button>
+
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#cerrarSesionModal" id="sesion"></button>
+                        </form>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container themed-container">
+            <div class="row themed-row">
+                <div class="col col-lg-12 themed-grid-col">
+                    <h1 class="titulo">Convenios con Hoteles y aerolineas</h1>
+
+                    <p>
+                        Poseemos distintos comvenios con hoteles en todos los viajes a destinos que ofertamos.
+                    </p>
+
+                    <p>
+                        Como principal oferta en colombia, tenemos convenios con la cadena de hotel decameron y hilton
+                        garden. En el exterior tenemos contacto con hoteles muy exclusivos en new york, venecia y demas
+                        destinos que ofertamos
+                    </p>
+
+                    <ul>
+                        <ol>
+                            <li>Aereolineas</li>
+                            <ul>
+                                <li>Avianca</li>
+                                <li>Copa Airlines</li>
+                                <li>Quatar airlines</li>
+                                <li>Eva Air</li>
+                                <li>Viva Colombia</li>
+                            </ul>
+
+                            <li>Hoteles</li>
+                            <ul>
+                                <li>Decameron</li>
+                                <li>Hotel San Francisco plaza</li>
+                                <li>Anticavilla Restaurant, Hotel & Spa</li>
+                                <li>>Bahia Principe Luxury Bounganville</li>
+                            </ul>
+                        </ol>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row themed-row">
+                <div class="col col-lg-1 themed-grid-col">
+
+                </div>
+
+                <div class="col col-lg-10 themed-grid-col">
+                    <h1 class="contactenos">Cotiza viaje</h1>
+
+                    <form action="" id="formulario-cotizar">
+                        <div class="row themed-row">
+                            <div class="col col-lg-3 themed-grid-col">
+                                <select name="destino" id="dest" class="form-select">
+                                    <option value="Elegir-dest" id="AF" selected>Elegir opción</option>
+                                    <option value="san-andres">San Andres</option>
+                                    <option value="cartagena">Cartagena</option>
+                                </select>
+                            </div>
+
+                            <div class="col col-lg-3 themed-grid-col">
+                                <input class="form-control" type="date" name="dateIni" id="dateIni"
+                                    placeholder="Ingrese la fecha de viaje" alt="Ingrese la fecha de viaje" />
+                            </div>
+
+                            <div class="col col-lg-3 themed-grid-col">
+                                <input class="form-control" type="date" name="dateFin" id="dateFin"
+                                    placeholder="Ingrese la fecha de retorno" alt="Ingrese la fecha de viaje" />
+                            </div>
+                        </div>
+
+                        <div class="row themed-row">
+                            <div class="col col-lg-3 themed-grid-col">
+                                <input class="form-control" type="number" name="viajeros" id="viajeros"
+                                    placeholder="Ingrese cuantas personas agregar al paquete" />
+                            </div>
+
+                            <div class="col col-lg-3 themed-grid-col">
+                                <select name="vuelo" id="vuelo" class="form-select">
+                                    <option value="Elegir-vuel" id="AF" selected>Elegir opción</option>
+                                    <option value="si-vuelo">Si</option>
+                                    <option value="no-vuelo">No</option>
+                                </select>
+                            </div>
+
+                            <div class="col col-lg-3 themed-grid-col">
+                                <select name="transporte" id="transporte" class="form-select">
+                                    <option value="Elegir-trans" id="AF" selected>Elegir opción</option>
+                                    <option value="si-trans">Si</option>
+                                    <option value="no-trans">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary" onclick="validarFormCotizar()">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col col-lg-1 themed-grid-col">
+
+                </div>
+            </div>
+
+            <div class="row themed-row">
+                <div class="sucursalbackground2">
+                    <h2>Cotizaciones</h2>
+
+                    <div id="Div">
+                        <table border="1" class="table" id="tabla6">
+
+                            <th></th>
+
+                        </table>
+                    </div>
+
+                    <button onclick="ocultarymostrar()" class="btn btn-info">Ocultar/Mostrar</button>
+                </div>
+            </div>
+
+            <div class="row themed-row">
+                <div class="tablaconvenios">
+                    <table class="table">
+                        <tr>
+                            <td rowspan="3">Precios</td>
+                            <td scope="col">Internacionales</td>
+                            <td scope="col">Entre 500-1000 la noche</td>
+                        </tr>
+
+                        <tr>
+                            <td>Nacionales</td>
+                            <td>100-500 La noche</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3>Por medio de los siguientes links puede acceder a las paginas de las Aereolineas</h3>
+
+                <ul>
+                    <li><a href="https://www.avianca.com/co/es/">Avianca</a></li>
+                    <li><a href="https://www.vivaair.com/co/es">Viva colombia</a></li>
+                    <li><a href="https://www.copaair.com/es/web/gs">Copa airlines</a></li>
+                </ul>
+
+                <form action="" class="correo">
+                    <h4>Mantengamonos en contacto</h4>
+                    <label for="">Correo electronico</label>
+                    <input type="email" name="" id="" placeholder="example@dominio.com"> 
+                    <input type="button" value="Enviar Informacion">
+                </form>
+            </div>
+
+            <div class="row themed-row">
+                <div class="col col-lg-12 themed-grid-col">
+                    <section class="py-5 text-center container">
+                        <div class="row py-lg-5">
+                            <div class="col-lg-6 col-md-8 mx-auto">
+                                <h1 class="fw-light">Galeria de Imagenes</h1>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="album py-5 bg-light">
+                        <div class="container themed-container">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 themed-row">
+                                <div class="col themed-grid-col">
+                                    <div class="card shadow-sm">
+                                        <img src="/Img/uno.jpg" alt="img1" />
+                                    </div>
+                                </div>
+
+                                <div class="col themed-grid-col">
+                                    <div class="card shadow-sm">
+                                        <img src="/Img/dos.jpg" alt="img2" />
+                                    </div>
+                                </div>
+
+                                <div class="col themed-grid-col">
+                                    <div class="card shadow-sm">
+                                        <img src="/Img/tres.jpg" alt="img3" />
+                                    </div>
+                                </div>
+
+                                <div class="col themed-grid-col">
+                                    <div class="card shadow-sm">
+                                        <img src="/Img/cuatro.jpg" alt="img4" />
+                                    </div>
+                                </div>
+
+                                <div class="col themed-grid-col">
+                                    <div class="card shadow-sm">
+                                        <img src="/Img/cinco.jpg" alt="img5" />
+                                    </div>
+                                </div>
+
+                                <div class="col themed-grid-col">
+                                    <div class="card shadow-sm">
+                                        <img src="/Img/seis.jpg" alt="img6" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h2 class="footer-heading mb-4">Mas informacion de la agencia</h2>
+                            <p>
+                                Esta agencia se dedica a la promocion y venta de paquetes de sitios turisticos a
+                                diferentes destinos
+                                ubicados en colombia y en el mundo, tenemos convenios con diferentes hoteles en los
+                                destinos que
+                                ofrecemos.
+                            </p>
+                        </div>
+                        <div class="col-md-3 ml-auto">
+                            <h2 class="footer-heading mb-4">Quick Links</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#about-section" class="smoothscroll">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#services-section" class="smoothscroll">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonials-section" class="smoothscroll">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#contact-section" class="smoothscroll">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h2 class="footer-heading mb-4">Follow Us</h2>
+                            <a href="https://www.facebook.com/" target="_blanck" class="pl-0 pr-3"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABjklEQVRIS7WVy1HDMBCGd90AJQAVECpISoAKCBWQnLx7IpxWPhEqIFRA6CAlhA5MB9CAlxFjC/khWTBjz2gm8Ur69vkbYeIHJ74fRgEiskTEOQDM6mV9OtZrT0RvMSeDgKIorlT1EQDORqIsEXGd5/l+aN8gwBizBYC7P6ZvS0Tr7pke4J+XN/c+EdHKh7QAdVpeQ56r6keWZSs/HSKyQcT75gwiXvv2FkBEbD5PA4AvVZ0xc+nbuwAAKIno3AGbH3W3PEe8f2Hmpbd/kWXZXFUXAGCXe/woXAQiskPEmwjggZk31p6QSueMAxhjbG9fpAAG0tI9diSiS/vSB2isLVXVRZAAACL6uXsU0GwMwUXkUE96a0sPEOqgMYAx5hMATjoOvBORlZbfCEJFTgD0Uquq/SIntGlyDVT1lpl3rQjsn9igpRbZTjszO4FMlopUQFQqbBQhsUsExMXOk4HeVI8B/MIG1dQ3WDmoqmrbiF8IMKSwSQBfBGsxOzSdYTuu+y40iKPf5Jh8pNgmB3wD+mn9GQPOWo0AAAAASUVORK5CYII=" /><span
+                                    class="icon-facebook"></span></a>
+                            <a href="https://www.twitter.com/" target="_blanck" class="pl-3 pr-3"><span
+                                    class="icon-twitter"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABoklEQVRIS91VwXHCMBC8kz/8khLoIKaCkApCKgipIPiD0A9ewnygg9BBoAM6CFQQp4KQJzy8mZuxGSNk7GSGD5rxR6fb1e2d1kwXXnxhfLoygul0ehtF0bZKtjiOOwBeiahNRAkzz7XWI8mTmNZ6kWMcSWStTYIg6PT7/XUZSRzHPQBTT1xyQgAvxpj5CcFkMgnTNP0goi2AJ2PMygWx1jaZ+fNMhWsAmyAIZvklDxWIPLvd7ruQPAcwMsYk+V4mzfsZgh+lVLuogCvRipnvHYAFM8uXAGiVyJOnLAeDQaeYf1TBfr9vAxD9bqoa7YtnFQ9LCRyJ/szBzJHWeuYlkE1rrU+i2kRKqZY7gW4PZEpkhu9qo2YHAXwZY5pu3olVWGvbzCyP6KhZVYQ+eSTHR9Bl5rcqwGJcbt9oNEKfC3jNbjweS6OkiloLwIPvYXoryBHl1RLRkJmfz7G41lDZAzmQ2YZU0D33agH0ir7jO3uQKGtuj4gea+iyzMAPNlKW422y2DAzh4Vx3QDYKqUWaZouiv5UdZkr+6NVlfuf+MUl+gXdMr8ZRVCvFAAAAABJRU5ErkJggg==" /></span></a>
+                            <a href="https://www.instagram.com/" target="_blanck" class="pl-3 pr-3"><span
+                                    class="icon-instagram"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACA0lEQVRIS81VMW4bQQzkbKFV6XTubH8gVh4Q2HlB/IPIL4jV6HarKBUP29h5ga0XxJVbK6lSykgbICryAKUVoGNAYfdwOsvSKYBgExAOEHgcDjmcA+04sOP69DwAzHwK4AMRdeJvHdExEY1FZOi9H9UTHzFg5i6Aa00UkW8ApiKiRR4FgI6I7AE4ifnn3vubauISQOz8Xgu32+2zXq83bbIjZj4EcEtExyLyrsqkDnAD4Mxae9ikeAhhvyiKOyL6ISIBwO84qm5qrA4wIaKJ9/603rmOzhhzEP+fZFk2DCG8LYriOxH9dM69ZuYRgAPn3NFKgDzPhYi+OOcuUkIIoVMUhe5EF16NsTHmfD6f7xljfmVZ9icCnDjnysaXGCiAiHz23g9SpTzPdcE640Gr1VoscDabdUXkUtXjnHuTcrcGSIoC0Muy7KraPjMPAHwSkVI5/wOwKGKtfVVfelSOLrVk/CIBFke3sxHpzOOSj4nowlo7jEv+KCIqhAfnXKmuRiN6QqaqHgWpxoMxptvv90sb2QjAzGsPTeWaDq3uOYmtepP3PuUt2zUzq1W8t9YeNbGKmmz1VjZahdr0PRGNor6V0caIkv2q177W7LRS1a4ViIimAFbatYgkz1o8q0e30osqJ68vqCMqo2RwTzH5GxlfNfrgbJzHlgnP803essm16f8AxThfKIocpB4AAAAASUVORK5CYII=" /></span></a>
+                            <a href="https://www.linkedin.com/" target="_blanck" class="pl-3 pr-3"><span
+                                    class="icon-linkedin"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABIklEQVRIS+WVwU3DQBBF/7/5FpdAB4QKSAnQAR0QnzyuYMcnk06SCggdJB1QAhx9GjSWN1JQMDaOo0jMybva/W//eHaHmDg4sT4uC1DVHYDbka52InIXNY4cqKqNFG+2i8hBtwuwamHPQ6F9ACsRWbqwqr4AGAS5CoAf3k/u0TgZEn0cfJqZVxRIzgHMzOythdyQTM1sDeCd5MP3yvsV4GJFUSxcMISwJXkfN4UQnpIkWWdZ9hFdlWW5NLMqjkcBfkqVqjpw1qtMuxxUVZXWdf0KYE7yMc9zT9XB6WhACGFB0gEeGxHxfzAN4JTTszr4xwAAXnLNRfNqAZAC2LZj//Y5j1Prer+mQ16Ho7VdF+0cDWcvItHhhVvmn3PSsXHypv8FqEb+GfB19PYAAAAASUVORK5CYII=" /></span></a>
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                    <form action="#" method="post" class="footer-subscribe">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control border-secondary text-white bg-transparent"
+                                placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2" />
+                            <div class="input-group-append">
+                                <button class="btn btn-primary text-black" type="button" id="button-addon2">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <div class="border-top pt-3">
+                        <p class="pfooter">
+                            Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="cerrarSesionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cerrarSesionModal">Administracion de Sesion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="cerrarSesion()">Cerrar Sesion</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar Modal</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" id="modalLogin">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" method="post">
+
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="titulomodal1">Iniciar Sesion</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <div class="mb-3 row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Usuario</label>
+
+                            <div class="col-sm-9" id="texto1">
+                                <input type="text" class="form-control" id="inputEmail">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+
+                            <div class="col-sm-9" id="texto1">
+                                <input type="password" class="form-control" id="inputPassword">
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="botonesmodal2" class="btn btn-primary"
+                                onclick="loginJSON()">Iniciar
+                                Sesion</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
