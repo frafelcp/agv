@@ -32,3 +32,22 @@
     background-color: rgba(0, 123, 255, .15);
     border: 1px solid rgba(0, 123, 255, .2);
   }
+
+  .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+  footer{
+    margin-bottom: -50px;
+    padding-bottom: 30px;
+  }
